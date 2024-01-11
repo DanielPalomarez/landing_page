@@ -1,16 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
-    <h1 class="text-white">Daniel Palomarez</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto">
-
-      </ul>
-      <!-- LOGIN COMPONENT HERE -->
-    </div>
+  <nav class="">
+    <ul class="d-flex justify-content-end">
+      <li class="m-3" v-for="link in links" :key="link">
+        <a>{{ link }}</a>
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -20,6 +14,7 @@ import { loadState, saveState } from '../utils/Store.js';
 import Login from './Login.vue';
 export default {
   setup() {
+    const links = ['About me', 'My skills', 'Portfolio', 'Contact']
 
     const theme = ref(loadState('theme') || 'light')
 
@@ -28,6 +23,7 @@ export default {
     })
 
     return {
+      links,
       theme,
       toggleTheme() {
         theme.value = theme.value == 'light' ? 'dark' : 'light'
@@ -53,6 +49,14 @@ a:hover {
   border-bottom: 2px solid var(--bs-success);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {

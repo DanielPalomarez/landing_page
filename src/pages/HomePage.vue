@@ -1,14 +1,23 @@
 <template>
-  landing Page
+  <div class="container-fluid">
+    <section class="row">
+      <TopSection />
+    </section>
+  </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import TopSection from '../components/TopSection.vue';
+
 export default {
   setup() {
+    const count = ref(0);
     return {
-
-    }
-  }
+      count
+    };
+  },
+  components: { TopSection }
 }
 </script>
 
