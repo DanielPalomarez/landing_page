@@ -3,12 +3,22 @@
     <section class="row">
       <TopSection />
     </section>
+    <section class="row d-flex justify-content-center text-center">
+      <AboutMe />
+      <MySkills />
+      <Portfolio />
+      <ContactMe />
+    </section>
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
 import TopSection from '../components/TopSection.vue';
+import AboutMe from '../components/AboutMe.vue';
+import MySkills from '../components/MySkills.vue';
+import Portfolio from '../components/Portfolio.vue';
+import ContactMe from '../components/ContactMe.vue';
 
 export default {
   setup() {
@@ -17,7 +27,7 @@ export default {
       count
     };
   },
-  components: { TopSection }
+  components: { TopSection, AboutMe, MySkills, Portfolio, ContactMe }
 }
 </script>
 
