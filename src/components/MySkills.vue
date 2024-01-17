@@ -1,5 +1,5 @@
 <template>
-    <div class="col-10 p-4">
+    <div class="col-10 p-4 d-none d-md-block">
         <p class="fw-bold">My Skills</p>
         <div class="justify-content-between fs-4 d-flex">
             <span class="skill" v-for="skill in skills" :key="skill">{{ skill }}</span>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="">
+  <nav class="d-none d-md-inline">
     <ul class="d-flex justify-content-end">
       <li class="m-3" v-for="link in links" :key="link">
         <a>{{ link }}</a>

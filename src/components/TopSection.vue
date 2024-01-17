@@ -2,7 +2,7 @@
     <div class="col-12 p-0">
         <div class="bg-img">
             <Navbar />
-            <div class="text-center">
+            <div class="text-center text-white pt-5">
                 <h1>Daniel Palomarez</h1>
                 <h2>Full Stack Web Developer</h2>
 
@@ -29,10 +29,10 @@ export default {
 .bg-img {
     // FIXME FIX THIS STUPID PLACE HOLDER IMAGE OR FIND A REAL IMAGE TO USE
     background-image: url('https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/09/15183456/re-zero-season-2-screenshot-of-emilia.jpg');
-    height: 35rem;
+    min-height: 100dvh;
     width: 100%;
     background-repeat: no-repeat;
-    object-fit: cover;
-    object-position: center;
+    background-position: center;
+    background-size: cover;
 }
 </style>
