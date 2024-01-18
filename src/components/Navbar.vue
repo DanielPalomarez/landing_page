@@ -1,11 +1,11 @@
 <template>
-  <nav class="d-none d-md-inline">
+  <!-- <nav class="d-none d-md-inline">
     <ul class="d-flex justify-content-end">
       <li class="m-3" v-for="link in links" :key="link">
         <a>{{ link }}</a>
       </li>
     </ul>
-  </nav>
+  </nav> -->
 </template>
 
 <script>

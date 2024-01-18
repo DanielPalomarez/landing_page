@@ -3,6 +3,9 @@
     <section class="row">
       <TopSection />
     </section>
+    <section class="row">
+      <Wave />
+    </section>
     <section class="row d-flex justify-content-center text-center">
       <AboutMe />
       <MySkills />
@@ -19,6 +22,7 @@ import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
 import Portfolio from '../components/Portfolio.vue';
 import ContactMe from '../components/ContactMe.vue';
+import Wave from '../components/wave.vue';
 
 export default {
   setup() {
@@ -27,7 +31,7 @@ export default {
       count
     };
   },
-  components: { TopSection, AboutMe, MySkills, Portfolio, ContactMe }
+  components: { TopSection, AboutMe, MySkills, Portfolio, ContactMe, Wave }
 }
 </script>
 

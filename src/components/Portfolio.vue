@@ -1,25 +1,27 @@
 <template>
-    <div class="col-10 ">
+    <div class="col-12 py-5 col-md-12 ">
         <div class="img-container">
             <div v-if="slideIndex == 1" class="slides fade">
-                <img class="img" src="https://i.pinimg.com/736x/b0/ba/46/b0ba46bdeceb571926903194f86dc3ac.jpg" alt="">
+                <img class="img rounded"
+                    src="https://mms.businesswire.com/media/20201003005002/en/827178/5/SSBU_Steve_%26_Alex_3.jpg"
+                    alt="steve">
             </div>
             <div v-if="slideIndex == 2" class="slides fade">
-                <img class="img"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS94pZFbmPcLM4AdPD6YSKLqBE002oJ0fAhFg&usqp=CAU"
+                <img class="img rounded"
+                    src="https://videogames.si.com/.image/ar_1.91%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_1200/MjAwMzI2MDAzMTMyNzM2NjIw/fortnite-khaby-lame.jpg"
                     alt="">
             </div>
             <div v-if="slideIndex == 3" class="slides fade">
-                <img class="img"
-                    src="https://thicc-af.mywaifulist.moe/waifus/emilia-re-zero-starting-life-in-another-world/uHMcLJztzbBKWTo48f7687U3pttMdVht3WWMbmkI.jpg?class=thumbnail"
+                <img class="img rounded" src="https://i.pinimg.com/474x/15/7d/f7/157df7d860957b35c81f16fc794a5065.jpg"
                     alt="">
             </div>
-            <a class="prev" @click="changeSlide(-1)">&#10094;</a>
-            <a class="next" @click="changeSlide(1)">&#10095;</a>
+            <a title="previous image" class="prev" @click="changeSlide(-1)">&#10094;</a>
+            <a title="next image" class="next" @click="changeSlide(1)">&#10095;</a>
         </div>
         <div>
-            <span :class="{ 'activeDot': slideIndex == slide }" @click="currentSlide(slide)" v-for="slide in slides"
-                class="px-1 dot" :key="slide"> <i class="mdi mdi-circle"></i></span>
+            <span :title="`image ${slide}`" role="button" :class="{ 'activeDot': slideIndex == slide }"
+                @click="currentSlide(slide)" v-for="slide in slides" class="px-1 dot" :key="slide"> <i
+                    class="mdi mdi-circle"></i></span>
         </div>
 
     </div>
@@ -91,6 +93,7 @@ export default {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(255, 212, 219, 0.441);
 }
 
 .prev:hover,
