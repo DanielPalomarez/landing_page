@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o,a as s}from"./index-Wwno1AHq.js";const c={setup(){return{}}},a={class:"col-10 p-4"},n=s("p",{class:"fw-bold"}," Contact Me ",-1),r=[n];function _(p,d,i,l,f,u){return e(),o("div",a,r)}const m=t(c,[["render",_]]);export{m as default};
