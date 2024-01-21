@@ -3,9 +3,6 @@
     <section class="row">
       <TopSection />
     </section>
-    <section class="row">
-      <Wave />
-    </section>
     <section class="row d-flex justify-content-center text-center">
       <AboutMe />
       <MySkills />

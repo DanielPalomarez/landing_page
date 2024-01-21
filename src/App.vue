@@ -29,6 +29,9 @@ export default {
   --main-height: calc(100vh - 32px - 64px);
 }
 
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
 
 footer {
   display: grid;

@@ -1,12 +1,19 @@
 <template>
-    <div class="col-12 p-0">
+    <div class="col-12 p-0 wave">
         <div class="bg-img">
             <Navbar />
-            <div class="text-center text-white pt-5">
-                <h1>Daniel Palomarez</h1>
-                <h2>Full Stack Web Developer</h2>
+            <div class="text-center text-white pt-5 bebas">
+                <h1 class="fw-bold ">Daniel Palomarez</h1>
+                <h2 class="fw-bold">Full Stack Web Developer</h2>
 
             </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1705548013 p-0">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
         </div>
     </div>
 </template>
@@ -40,5 +47,25 @@ export default {
     // background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     // background-image: linear-gradient(to right, rgba(238, 174, 202, 1), rgba(148, 187, 233, 1));
     background-image: linear-gradient(to right, rgb(250, 128, 181), rgb(249, 215, 221));
+}
+
+.custom-shape-divider-bottom-1705548013 {
+    position: absolute;
+    bottom: -11dvh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1705548013 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 78px;
+}
+
+.custom-shape-divider-bottom-1705548013 .shape-fill {
+    fill: #f4f4f4;
 }
 </style>

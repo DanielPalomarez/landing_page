@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 py-5 col-md-12 ">
+    <div class="col-12 py-5 col-md-10 ">
         <div class="img-container">
             <div v-if="slideIndex == 1" class="slides fade">
                 <img class="img rounded"
