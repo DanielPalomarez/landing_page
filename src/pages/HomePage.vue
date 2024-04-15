@@ -1,12 +1,17 @@
 <template>
   <div class="container-fluid">
-    <section class="row">
-      <TopSection />
+    <section class="row sticky-top">
+      <Navbar />
+    </section>
+    <section class="row py-5">
+      <AboutMe />
     </section>
     <section class="row d-flex justify-content-center text-center">
-      <AboutMe />
       <MySkills />
-      <Portfolio />
+      <Experience />
+      <!-- <Portfolio /> -->
+      <PinUp />
+      <Valor />
       <ContactMe />
     </section>
   </div>
@@ -14,21 +19,24 @@
 
 <script>
 import { ref } from 'vue';
-import TopSection from '../components/TopSection.vue';
 import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
 import Portfolio from '../components/Portfolio.vue';
 import ContactMe from '../components/ContactMe.vue';
 import Wave from '../components/wave.vue';
+import Experience from '../components/Experience.vue';
+import Navbar from '../components/Navbar.vue';
+import PinUp from '../components/PinUp.vue'
+import Valor from '../components/Valor.vue'
 
 export default {
   setup() {
-    const count = ref(0);
     return {
-      count
     };
   },
-  components: { TopSection, AboutMe, MySkills, Portfolio, ContactMe, Wave }
+  components: {
+    AboutMe, MySkills, Portfolio, ContactMe, Wave, Navbar, Experience, PinUp, Valor
+  }
 }
 </script>
 

@@ -1,11 +1,10 @@
 <template>
-  <!-- <nav class="d-none d-md-inline">
-    <ul class="d-flex justify-content-end">
-      <li class="m-3" v-for="link in links" :key="link">
-        <a>{{ link }}</a>
-      </li>
-    </ul>
-  </nav> -->
+  <nav class="d-flex align-items-center justify-content-between bg-pink">
+    <a href="">PlaceHolder</a>
+    <li class="m-3">
+      <button class="ms-3 btn" v-for="link in links" :key="link">{{ link }}</button>
+    </li>
+  </nav>
 </template>
 
 <script>
@@ -37,31 +36,11 @@ export default {
 </script>
 
 <style scoped>
-a:hover {
-  text-decoration: none;
-}
-
-.nav-link {
-  text-transform: uppercase;
-}
-
-.navbar-nav .router-link-exact-active {
-  border-bottom: 2px solid var(--bs-success);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-a {
-  text-decoration: none;
+.bg-pink {
+  background-color: pink
 }
 
 li {
   list-style-type: none;
-}
-
-@media screen and (min-width: 768px) {
-  nav {
-    height: 64px;
-  }
 }
 </style>

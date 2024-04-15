@@ -25,6 +25,11 @@ export default {
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
+.construction-img {
+  height: 5rem;
+  width: auto;
+}
+
 :root {
   --main-height: calc(100vh - 32px - 64px);
 }
