@@ -1,33 +1,17 @@
 <template>
-  <div class="container-fluid">
-    <section class="row sticky-top">
+  <div class="container-fluid bg-pink">
       <Navbar />
+    <section class="row d-flex justify-content-center">
+      <Home />
     </section>
-    <section class="row py-5">
-      <AboutMe />
-    </section>
-    <section class="row d-flex justify-content-center text-center">
-      <MySkills />
-      <Experience />
-      <!-- <Portfolio /> -->
-      <PinUp />
-      <Valor />
-      <ContactMe />
-    </section>
+
+
   </div>
 </template>
 
 <script>
-import { ref } from 'vue';
-import AboutMe from '../components/AboutMe.vue';
-import MySkills from '../components/MySkills.vue';
-import Portfolio from '../components/Portfolio.vue';
-import ContactMe from '../components/ContactMe.vue';
-import Wave from '../components/wave.vue';
-import Experience from '../components/Experience.vue';
 import Navbar from '../components/Navbar.vue';
-import PinUp from '../components/PinUp.vue'
-import Valor from '../components/Valor.vue'
+import Home from '../components/Home.vue';
 
 export default {
   setup() {
@@ -35,7 +19,7 @@ export default {
     };
   },
   components: {
-    AboutMe, MySkills, Portfolio, ContactMe, Wave, Navbar, Experience, PinUp, Valor
+    Navbar, Home
   }
 }
 </script>

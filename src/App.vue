@@ -4,8 +4,7 @@
   <main>
     <router-view />
   </main>
-  <footer>
-  </footer>
+  
 </template>
 
 <script>
@@ -25,10 +24,6 @@ export default {
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
-.construction-img {
-  height: 5rem;
-  width: auto;
-}
 
 :root {
   --main-height: calc(100vh - 32px - 64px);
@@ -38,9 +33,4 @@ export default {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-footer {
-  display: grid;
-  place-content: center;
-  height: 32px;
-}
 </style>
