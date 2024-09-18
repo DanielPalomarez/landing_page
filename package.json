@@ -10,7 +10,6 @@
   "type": "module",
   "dependencies": {
     "@bcwdev/auth0provider-client": "0.0.13",
-    "@mdi/font": "7.3.67",
     "@popperjs/core": "2.11.8",
     "@vitejs/plugin-vue": "^4.5.0",
     "axios": "1.6.2",
