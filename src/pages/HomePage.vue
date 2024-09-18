@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid bg-pink">
+  <div class="container-fluid  bg-pink">
       <Navbar />
     <section class="row d-flex justify-content-center">
       <Home />
