@@ -1,0 +1,1 @@
+import e from"./Login-IUxVIfBk.js";import{_ as o,o as t,c as r}from"./index-IVhderkd.js";const n={setup(){return{}},components:{Login:e}},s={class:"text-center py-3"};function a(c,p,_,l,m,i){return t(),r("h1",s,"Hello I am Daniel Palomarez")}const d=o(n,[["render",a]]);export{d as default};

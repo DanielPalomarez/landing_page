@@ -2,9 +2,6 @@
     <div class="col-md-8">
         <h2 class="text-center fs-1">this is my combo</h2>
         <video class="video" muted autoplay loop src="../assets/img/RPReplay_Final1725985569.mp4"></video>
-        <h3 class="text-center fs-1">this is my pain</h3>
-        <img class="img" src="../assets/img/insane8.jpg" alt="">
-        <h4 class="text-center fs-1">that is all</h4>
     </div>
 </template>
 
