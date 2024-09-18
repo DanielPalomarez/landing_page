@@ -1,6 +1,5 @@
 <template>
-  <div class="container-fluid  bg-pink">
-      <Navbar />
+  <div class="container-fluid">
     <section class="row d-flex justify-content-center">
       <Home />
     </section>
@@ -10,7 +9,6 @@
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue';
 import Home from '../components/Home.vue';
 
 export default {
@@ -19,7 +17,7 @@ export default {
     };
   },
   components: {
-    Navbar, Home
+     Home
   }
 }
 </script>

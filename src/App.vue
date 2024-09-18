@@ -33,4 +33,8 @@ export default {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+#app {
+  background-color: pink;
+}
+
 </style>
