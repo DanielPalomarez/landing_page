@@ -3,7 +3,7 @@
 <h1 class="text-center  py-3">Hello I am Daniel Palomarez</h1>
 
         <h2 class="text-center fs-1">this is my combo</h2>
-        <video class="video" muted autoplay loop src="../assets/img/RPReplay_Final1725985569.mp4"></video>
+        <video class="video" muted autoplay loop controls src="../assets/img/RPReplay_Final1725985569.mp4"></video>
     </div>
 </template>
 
